@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+{% for post in post_list %}
+    <div>
+        <h2><a href="">{{ post.name }}</a></h2>
+        <p>{{ post.number }}</p>
+    </div>
+{% endfor %}
+{% endblock content %}
